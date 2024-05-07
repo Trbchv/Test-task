@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Космодент</title>
+</head>
+<header>
+    <div class="container">
+        <div class="header_upper row">
+            <div class="col-xxl-6 col-xl-4 col-lg-12">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-12 col-md-12 header_logo_inner ">
+                        <a href="#"><img src="images/logo.svg" alt="Logo" class="header_logo"></a>
+                    </div>
+                    <div class="col-xl-2 col-lg-12 col-md-2 col-4 phone_icon_box">
+                        <img alt="phone-image" src="images/phone.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-6 col-xl-8 col-lg-12 row right_header_upper">
+                <div class="col-xl-5 col-lg-12 d-flex flex-column row number_inner">
+                    <span class="single_number">Единый номер</span>
+                    <a href="tel:84912272008" class="header_number">+7 (4912) 27-20-08</a>
+                    <span class="working_time">08:00- 21:00</span>
+                </div>
+                <div class="col-xl-4 col-md-12 col-lg-12 row socials_inner off nav-item">
+                    <div class="link_ellipse"><a href=""><img alt="vk-logo" src="images/vk-logo.svg"></a></div>
+                    <div class="link_ellipse"><a href=""><img alt="ok-logo" src="images/ok-logo.svg"></a></div>
+                    <div class="link_ellipse"><a href=""><img alt="whatsapp-logo" src="images/whatsapp-logo.svg"></a></div>
+                    <div class="link_ellipse"><a href=""><img alt="telegram-logo" src="images/telegram-logo.svg"></a></div>
+
+                </div>
+                <div class=" col-xl-3 col-lg-12 btn_logo_inner mt-3">
+                    <button class="main_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Запись на прием</button>
+                </div>
+            </div>
+        </div>
+        <div class="header_lower">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container navigation">
+                    <button class="navbar-toggler mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item col">
+                                <a href="#" class="nav_link">Главная</a>
+                            </li>
+                            <li class="nav-item  col">
+                                <a href="#" class="nav_link">О клинике</a>
+                            </li>
+                            <li class="nav-item  col">
+                                <a href="#" class="nav_link">Услуги</a>
+                            </li>
+                            <li class="nav-item col">
+                                <a href="#" class="nav_link">Фото работ</a>
+                            </li>
+                            <li class="nav-item  col">
+                                <a href="#" class="nav_link">Статьи</a>
+                            </li>
+                            <li class="nav-item  col">
+                                <a href="#" class="nav_link">Отзывы</a>
+                            </li>
+                            <li class="nav-item  col">
+                                <a href="#" class="nav_link">Контакты</a>
+                            </li>
+                            <li class="row socials_inner nav-item on">
+                                <div class="link_ellipse"><a href=""><img alt="vk-logo" src="images/vk-logo.svg"></a></div>
+                                <div class="link_ellipse"><a href=""><img alt="ok-logo" src="images/ok-logo.svg"></a></div>
+                                <div class="link_ellipse"><a href=""><img alt="whatsapp-logo" src="images/whatsapp-logo.svg"></a></div>
+                                <div class="link_ellipse"><a href=""><img alt="telegram-logo" src="images/telegram-logo.svg"></a></div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<body>
+<main>
+    <!--    МОДАЛЬНОЕ ОКНО-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content col-8">
+                <div class="modal-header">
+                    <h5 class="modal_title" >Запись на прием</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" enctype="multipart/form-data" method="post" class="mt-2 container-fluid row m-0 d-flex justify-content-between">
+                        <input class="modal_form_input mt-3 input_icon name col-lg-12" type="text" placeholder="Ваше имя*" name="name">
+                        <input class="modal_form_input mt-3  input_icon tel col-lg-4 col-md-12 col-sm-12" type="text" placeholder="Телефон*" name="tel">
+                        <select class="modal_form_input mt-3 modal_form_select  input_icon col-lg-7 col-md-12 col-sm-12">
+                            <option selected disabled><span style="color: #D9D9D9 !important;">Выбрать специалиста</span></option>
+                            <option>Специалист 1</option>
+                            <option>Специалист 2</option>
+                            <option>Специалист 3</option>
+                        </select>
+                        <textarea class="modal_form_input col-12 modal_textarea mt-3" rows="200"   placeholder="Комментарий"></textarea>
+                        <p class="form_privacy mt-4">Отправляя заявку, вы соглашаетесь с <a href="#">политикой <br> конфиденциальности</a> данного сайта.</p>
+                        <div class="col-12 d-flex justify-content-center">
+                            <input type="submit" class="main_btn" value="Записаться">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <!--    /МОДАЛЬНОЕ ОКНО-->
+    <!--    СЕКЦИЯ "ЦЕНЫ"-->
+    <section class="prices mt-5">
+        <div class="container">
+            <div class="row d-flex align-items-baseline">
+                <h1 class="title">Цены</h1>
+                <div class="title-decoration col-lg-12 ms-1"></div>
+            </div>
+    <!--            АККОРДИОН-->
+            <div class="col-12 accordion_item">
+                <div class="col-12 accordion_head">
+                    <span class="accordion_title">Консультация стоматолога</span>
+                    <div class="accordion_btn"><svg class="accordion_btn_arrow" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L7.90698 7.90698L14.814 1" stroke="white"/>
+                    </svg>
+                    </div>
+                </div>
+                <div class="col-12 accordion_body row">
+                    <p class="accordion_subtitle"><img alt="hourglass" src="images/hourglass.svg" class="me-3">Длительность до <b>60 минут</b></p>
+                    <div class=" col-xxl-7 col-xl-7 col-lg-7">
+                        <p class="accordion_text ms-5">Специалисты стараются обеспечить все условия для зубосохранения. Удаление — это крайняя мера, когда уже нет никакой возможности сохранить зуб. Чтобы минимизировать риски и избежать удаления, посещайте специалистов вовремя.</p>
+                        <p class="accordion_text ms-5">Благодаря использованию современных анестетиков удаление зубов проходит безболезненно и в комфортной обстановке.</p>
+                    </div>
+                    <div class="col-5">
+                        <img src="images/accordion-img.png" alt="accordion_image" class="accordion_image">
+                    </div>
+                    <div class="col-12 price_list mt-5">
+                        <div class="col-12 price_list_item d-flex align-items-center  ">
+                            <p class="price_list_text ms-5">Удаление постоянного зуба (простое / сложное)</p>
+                            <div class="price_list_line me-2 ms-2"></div>
+                            <p class="price_list_price ">от 1 900 до 3 300 ₽</p>
+                        </div>
+                        <div class="col-12 price_list_item d-flex align-items-center  ">
+                            <p class="price_list_text ms-5">Удаление зуба мудрости (ретинированного/дистопированного зуба)</p>
+                            <div class="price_list_line me-2 ms-2"></div>
+                            <p class="price_list_price ">7 150 ₽</p>
+                        </div>
+                        <div class="col-12 price_list_item d-flex align-items-center  ">
+                            <p class="price_list_text ms-5">Удаление временного зуба</p>
+                            <div class="price_list_line me-2 ms-2"></div>
+                            <p class="price_list_price ">1 500 ₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 accordion_item">
+                <div class="col-12 accordion_head">
+                    <span class="accordion_title">Терапия</span>
+                    <div class="accordion_btn"><svg class="accordion_btn_arrow" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L7.90698 7.90698L14.814 1" stroke="white"/>
+                    </svg>
+                    </div>
+                </div>
+                <div class="col-12 accordion_body row">
+                    <p class="accordion_subtitle"><img alt="hourglass" src="images/hourglass.svg" class="me-3">Длительность до <b>60 минут</b></p>
+                    <div class=" col-xxl-7 col-xl-7 col-lg-7">
+                        <p class="accordion_text ms-5">Специалисты стараются обеспечить все условия для зубосохранения. Удаление — это крайняя мера, когда уже нет никакой возможности сохранить зуб. Чтобы минимизировать риски и избежать удаления, посещайте специалистов вовремя.</p>
+                        <p class="accordion_text ms-5">Благодаря использованию современных анестетиков удаление зубов проходит безболезненно и в комфортной обстановке.</p>
+                    </div>
+                    <div class="col-5">
+                        <img src="images/accordion-img.png" alt="accordion_image" class="accordion_image">
+                    </div>
+                    <div class="col-12 price_list mt-5">
+                        <div class="col-12 price_list_item d-flex align-items-center  ">
+                            <p class="price_list_text ms-5">Удаление постоянного зуба (простое / сложное)</p>
+                            <div class="price_list_line me-2 ms-2"></div>
+                            <p class="price_list_price ">от 1 900 до 3 300 ₽</p>
+                        </div>
+                        <div class="col-12 price_list_item d-flex align-items-center  ">
+                            <p class="price_list_text ms-5">Удаление зуба мудрости (ретинированного/дистопированного зуба)</p>
+                            <div class="price_list_line me-2 ms-2"></div>
+                            <p class="price_list_price ">7 150 ₽</p>
+                        </div>
+                        <div class="col-12 price_list_item d-flex align-items-center  ">
+                            <p class="price_list_text ms-5">Удаление временного зуба</p>
+                            <div class="price_list_line me-2 ms-2"></div>
+                            <p class="price_list_price ">1 500 ₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 accordion_item">
+                <div class="col-12 accordion_head">
+                    <span class="accordion_title">Удаление зубов</span>
+                    <div class="accordion_btn"><svg class="accordion_btn_arrow" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L7.90698 7.90698L14.814 1" stroke="white"/>
+                    </svg>
+                    </div>
+                </div>
+                <div class="col-12 accordion_body row">
+                    <p class="accordion_subtitle"><img alt="hourglass" src="images/hourglass.svg" class="me-3">Длительность до <b>60 минут</b></p>
+                    <div class=" col-xxl-7 col-xl-7 col-lg-7">
+                        <p class="accordion_text ms-5">Специалисты стараются обеспечить все условия для зубосохранения. Удаление — это крайняя мера, когда уже нет никакой возможности сохранить зуб. Чтобы минимизировать риски и избежать удаления, посещайте специалистов вовремя.</p>
+                        <p class="accordion_text ms-5">Благодаря использованию современных анестетиков удаление зубов проходит безболезненно и в комфортной обстановке.</p>
+                    </div>
+                    <div class="col-5">
+                        <img src="images/accordion-img.png" alt="accordion_image" class="accordion_image">
+                    </div>
+                    <div class="col-12 price_list mt-5">
+                        <div class="col-12 price_list_item d-flex align-items-center  ">
+                            <p class="price_list_text ms-5">Удаление постоянного зуба (простое / сложное)</p>
+                            <div class="price_list_line me-2 ms-2"></div>
+                            <p class="price_list_price ">от 1 900 до 3 300 ₽</p>
+                        </div>
+                        <div class="col-12 price_list_item d-flex align-items-center  ">
+                            <p class="price_list_text ms-5">Удаление зуба мудрости (ретинированного/дистопированного зуба)</p>
+                            <div class="price_list_line me-2 ms-2"></div>
+                            <p class="price_list_price ">7 150 ₽</p>
+                        </div>
+                        <div class="col-12 price_list_item d-flex align-items-center  ">
+                            <p class="price_list_text ms-5">Удаление временного зуба</p>
+                            <div class="price_list_line me-2 ms-2"></div>
+                            <p class="price_list_price ">1 500 ₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 accordion_item">
+                <div class="col-12 accordion_head">
+                    <span class="accordion_title">Имплантация</span>
+                    <div class="accordion_btn"><svg class="accordion_btn_arrow" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L7.90698 7.90698L14.814 1" stroke="white"/>
+                    </svg>
+                    </div>
+                </div>
+                <div class="col-12 accordion_body row">
+                    <p class="accordion_subtitle"><img alt="hourglass" src="images/hourglass.svg" class="me-3">Длительность до <b>60 минут</b></p>
+                    <div class=" col-xxl-7 col-xl-7 col-lg-7">
+                        <p class="accordion_text ms-5">Специалисты стараются обеспечить все условия для зубосохранения. Удаление — это крайняя мера, когда уже нет никакой возможности сохранить зуб. Чтобы минимизировать риски и избежать удаления, посещайте специалистов вовремя.</p>
+                        <p class="accordion_text ms-5">Благодаря использованию современных анестетиков удаление зубов проходит безболезненно и в комфортной обстановке.</p>
+                    </div>
+                    <div class="col-5">
+                        <img src="images/accordion-img.png" alt="accordion_image" class="accordion_image">
+                    </div>
+                    <div class="col-12 price_list mt-5">
+                        <div class="col-12 price_list_item d-flex align-items-center  ">
+                            <p class="price_list_text ms-5">Удаление постоянного зуба (простое / сложное)</p>
+                            <div class="price_list_line me-2 ms-2"></div>
+                            <p class="price_list_price ">от 1 900 до 3 300 ₽</p>
+                        </div>
+                        <div class="col-12 price_list_item d-flex align-items-center  ">
+                            <p class="price_list_text ms-5">Удаление зуба мудрости (ретинированного/дистопированного зуба)</p>
+                            <div class="price_list_line me-2 ms-2"></div>
+                            <p class="price_list_price ">7 150 ₽</p>
+                        </div>
+                        <div class="col-12 price_list_item d-flex align-items-center  ">
+                            <p class="price_list_text ms-5">Удаление временного зуба</p>
+                            <div class="price_list_line me-2 ms-2"></div>
+                            <p class="price_list_price ">1 500 ₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 accordion_item">
+                <div class="col-12 accordion_head">
+                    <span class="accordion_title">Виниры</span>
+                    <div class="accordion_btn"><svg class="accordion_btn_arrow" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L7.90698 7.90698L14.814 1" stroke="white"/>
+                    </svg>
+                    </div>
+                </div>
+                <div class="col-12 accordion_body row">
+                    <p class="accordion_subtitle"><img alt="hourglass" src="images/hourglass.svg" class="me-3">Длительность до <b>60 минут</b></p>
+                    <div class=" col-xxl-7 col-xl-7 col-lg-7">
+                        <p class="accordion_text ms-5">Специалисты стараются обеспечить все условия для зубосохранения. Удаление — это крайняя мера, когда уже нет никакой возможности сохранить зуб. Чтобы минимизировать риски и избежать удаления, посещайте специалистов вовремя.</p>
+                        <p class="accordion_text ms-5">Благодаря использованию современных анестетиков удаление зубов проходит безболезненно и в комфортной обстановке.</p>
+                    </div>
+                    <div class="col-5">
+                        <img src="images/accordion-img.png" alt="accordion_image" class="accordion_image">
+                    </div>
+                    <div class="col-12 price_list mt-5">
+                        <div class="col-12 price_list_item d-flex align-items-center  ">
+                            <p class="price_list_text ms-5">Удаление постоянного зуба (простое / сложное)</p>
+                            <div class="price_list_line me-2 ms-2"></div>
+                            <p class="price_list_price ">от 1 900 до 3 300 ₽</p>
+                        </div>
+                        <div class="col-12 price_list_item d-flex align-items-center  ">
+                            <p class="price_list_text ms-5">Удаление зуба мудрости (ретинированного/дистопированного зуба)</p>
+                            <div class="price_list_line me-2 ms-2"></div>
+                            <p class="price_list_price ">7 150 ₽</p>
+                        </div>
+                        <div class="col-12 price_list_item d-flex align-items-center  ">
+                            <p class="price_list_text ms-5">Удаление временного зуба</p>
+                            <div class="price_list_line me-2 ms-2"></div>
+                            <p class="price_list_price ">1 500 ₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--            /АККОРДИОН-->
+
+        </div>
+    </section>
+    <!--    /СЕКЦИЯ "ЦЕНЫ"-->
+<!--    СЕКЦИЯ "ЗАПИСЬ НА ПРИЕМ"-->
+    <section class="reception " style="background-image: url('images/form-background.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-6 col-md-12 ">
+                    <div class="row d-flex align-items-baseline">
+                    <h2 class="title reception_title">Запись на прием</h2>
+                    <div class="title-decoration ms-1"></div>
+                    <p class="reception_subtitle">Запишитесь на консультацию или прием
+                        по телефону <a href="tel:84912272008" style="font-weight: 600">+7 (4912) 272-008</a> или заполните форму</p>
+                </div>
+                    <form action="#" enctype="multipart/form-data" method="post" class="mt-5">
+                        <input class="form_input mt-3 input_icon name" type="text" placeholder="Ваше имя*" name="name">
+                        <input class="form_input mt-3  input_icon tel" type="text" placeholder="Телефон*" name="tel">
+                        <input class="form_input mt-3  input_icon mail" type="email" placeholder="Почта" name="email">
+                        <select class="form_input mt-3 form_select  input_icon">
+                            <option selected disabled><span style="color: #D9D9D9 !important;">Выберите услугу</span></option>
+                            <option>Услуга 1</option>
+                            <option>Услуга 2</option>
+                            <option>Услуга 3</option>
+                        </select>
+                        <p class="form_privacy mt-4">Отправляя заявку, вы соглашаетесь с <a href="#">политикой <br> конфиденциальности</a> данного сайта.</p>
+                        <input type="submit" class="main_btn" value="Отправить">
+                    </form>
+                </div>
+                <div class="col-6 d-flex justify-content-center align-items-center form_image_inner">
+                    <img src="images/form-image.png" class="form-image" alt="form-image">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--    /СЕКЦИЯ "ЗАПИСЬ НА ПРИЕМ"-->
+    <!-- СЕКЦИЯ "КОНТАКТЫ" -->
+    <section class="contacts">
+
+            <div class="container">
+                <div class="col-xl-12 col-lg-12 contacts_left">
+                    <div class="col-xl-6 col-lg-12 contacts_text">
+                        <div class="d-flex align-items-baseline row mt-5 col-xl-12 col-lg-12 m-0 ">
+                            <h2 class="title reception_title">Наши контакты</h2>
+                            <div class="title-decoration ms-1"></div>
+                        </div>
+                        <div class="col-8 d-flex flex-column mt-5 ">
+                            <span class="single_number">Единый номер</span>
+                            <a href="tel:84912272008" class="header_number">+7 (4912) 27-20-08</a>
+                            <span class="working_time">08:00- 21:00</span>
+                        </div>
+                        <div class="col-8 row socials_contacts mt-5 m-0">
+                            <div class="link_ellipse"><a href=""><img alt="vk-logo" src="images/vk-logo.svg"></a></div>
+                            <div class="link_ellipse"><a href=""><img alt="ok-logo" src="images/ok-logo.svg"></a></div>
+                            <div class="link_ellipse"><a href=""><img alt="whatsapp-logo" src="images/whatsapp-logo.svg"></a></div>
+                            <div class="link_ellipse"><a href=""><img alt="telegram-logo" src="images/telegram-logo.svg"></a></div>
+                        </div>
+                        <div class="col-8 mt-5 contacts-margin">
+                            <button class="main_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Запись на прием</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12 contacts_right ">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A426371501f38ec99542813654382920f81b1afaf32b6838ec6a40a6fd89fa6bb&amp;width=668&amp;height=900&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+
+
+
+
+
+    </section>
+    <!-- /СЕКЦИЯ "КОНТАКТЫ" -->
+    <!-- ПОДВАЛ -->
+    <footer  style="background-image: url('images/footer.png');">
+        <div class="container footer_outer">
+            <div class="row footer_inner">
+                <div class="col-xl-3 col-lg-3 col-md-12"><a href="#"><img src="images/footer-logo.svg" alt="footer-logo" class="footer-logo"></a><p class="footer_text mt-4">Все права защищены © ООО «Космодент», 2018-2022
+                    <a href="#" class="footer_link">Лицензия</a></p></div>
+                <div class="col-xl-2 col-lg-2 footer_nav">
+                        <div class="col mt-2"><a href="#" class="footer_nav_link">Главная</a></div>
+                        <div class="col mt-2"><a href="#" class="footer_nav_link">О клинике</a></div>
+                        <div class="col mt-2"><a href="#" class="footer_nav_link">Услуги</a></div>
+                        <div class="col mt-2"><a href="#" class="footer_nav_link">Фото работ</a></div>
+                        <div class="col mt-2"><a href="#" class="footer_nav_link">Статьи</a></div>
+                        <div class="col mt-2"><a href="#" class="footer_nav_link">Отзывы</a></div>
+                        <div class="col mt-2"><a href="#" class="footer_nav_link">Контакты</a></div>
+                </div>
+                <div class="col-xl-3 col-lg-3">
+                    <p class="footer_text">Возможны противопоказания к применению. Необходима консультация врача.</p>
+                    <a href="#" class="footer_link">Политика конфиденциальности</a>
+                    <p class="footer_text">Этот сайт защищен reCAPTCHA, и применяются <a href="#" class="footer_link">Политика конфиденциальности</a> и <a href="#" class="footer_link">Условия использования Google</a></p>
+                </div>
+                <div class="col-xl-2 col-lg-2 pay_methods"><img src="images/to-pay.png" alt="pay-methods"></div>
+                <div class="col-xl-1 col-lg-1 stats"><img src="images/stats.png" alt="statistic"></div>
+                <div class="col-xl-2 col-lg-2 copyright">
+                    <div>
+                        <img src="images/galactic-logo.svg">
+                    </div>
+                    <div>
+                        <a href="#" class="footer_link">Создание сайта</a>
+                        <span class="footer_text">-<br> студия «Галактика»</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- /ПОДВАЛ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <script src="script/script.js"></script>
+</main>
+</body>
+
+</html>
